@@ -3,6 +3,9 @@ import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
 
 class SearchBar extends Component {
+  componentDidMount(){
+    buildClientList();
+  }
   render() {
     return (
       <div>
@@ -18,6 +21,13 @@ class SearchBar extends Component {
       />
       </div>
     );
+  }
+}
+
+function buildClientList(values) {
+  let contents = []
+  for (let i=0; i<values.length; i++) {
+  contents.push({name: values[i].name, language: values[i].language, gender: values[i].gender, age : values[i].age, profession: values[i].profession, rating: values[i].rating})
   }
 }
 
