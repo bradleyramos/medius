@@ -1,3 +1,6 @@
+import firebase from 'firebase/app';
+import 'firebase/database'; // If using Firebase database
+
 const firebaseConfig = {
     apiKey: "AIzaSyCGIBCDQvrEx3B1rvgi_DNSc1IZ1wcM85U",
     authDomain: "mediusv1.firebaseapp.com",
@@ -10,6 +13,6 @@ const firebaseConfig = {
   };
 
 firebase.initializeApp(firebaseConfig);
-const db = firebase.database().ref();
 
-export default db;
+
+export default firebase;

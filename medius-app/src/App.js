@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import SearchBar from './components/SearchBar.js';
 
@@ -9,7 +8,7 @@ function App() {
       <div className="Header">
         Medius
       </div>
-      
+      <SearchBar></SearchBar>
     </div>
   );
 }
