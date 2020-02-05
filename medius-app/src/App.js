@@ -1,13 +1,12 @@
 import React from 'react';
 import './App.css';
 import SearchBar from './components/SearchBar.js';
+import HeadBar from './components/HeadBar.js';
 
 function App() {
   return (
     <div className="App">
-      <div className="Header">
-        Medius
-      </div>
+      <HeadBar></HeadBar>
       <SearchBar></SearchBar>
     </div>
   );
