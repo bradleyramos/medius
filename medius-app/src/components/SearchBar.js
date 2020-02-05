@@ -36,6 +36,11 @@ const useStyles = makeStyles(theme => ({
     textAlign: 'center',
     color: theme.palette.text.secondary,
   },
+  cartImage: {
+    display: 'flex',
+    width: '100%',
+    height: '100%',
+  }
 }));
 
 function rateCheck(score) {
@@ -142,9 +147,10 @@ const SearchBox = ({data}) => {
           <CardActionArea>
             <CardMedia
               className={classes.media}
-              image={'./data/creatives/'+creative.sku+'_1.jpg'}
+              image={'/../../public/data/default.jpg'}
               title={creative.name}
             />
+            <img className={classes.cartImage} alt="t-shirt" src = {'./data/default.jpg'} />
             <CardContent>
               <Typography gutterBottom variant="h5" component="h2">
                 {creative.name}
