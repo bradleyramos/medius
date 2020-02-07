@@ -142,7 +142,7 @@ const SearchBox = ({data}) => {
         {
           creatives.map(creative =>
         
-          <Grid item xs={3}>
+          <Grid item xs={3} key={creative.key} >
           <Card className={classes.card}>
           <CardActionArea>
             <CardMedia
@@ -191,6 +191,7 @@ const SearchBar = () => {
         let contents = []
         for (let i=0; i<values.length; i++) {
           contents.push({name: values[i].Name, 
+            key: 'id' + i,
             language: values[i].Language, 
             gender: values[i].Gender, 
             age : values[i].Age, 
