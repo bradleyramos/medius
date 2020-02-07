@@ -38,7 +38,7 @@ const CreativesCard = ({ creativesList }) => {
     <div className={classes.root}>
       <Grid container spacing={3} direction="row" justify="center" alignItems="flex-start" style={{padding: '5%'}}>
       {creativesList.map(creative => (
-        <Grid item xs={3}>
+        <Grid item xs={3} key={creative.key}>
         <Card className={classes.card}>
           <CardActionArea>
             <CardMedia

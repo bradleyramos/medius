@@ -118,6 +118,8 @@ const SearchBar = () => {
     console.log("filterCreatives list",list)
     return list.filter(item => {
       return (
+        item.language.toLowerCase().includes(filterInput.language.toLowerCase()) &&
+        item.profession.toLowerCase().includes(filterInput.profession.toLowerCase()) &&
         item.rating >= filterInput.rating
       );
     });
