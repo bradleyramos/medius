@@ -68,6 +68,7 @@ const Home = () => {
     <div className={classes.root}>
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
+        <Typography> Flimmaker's Dashboard</Typography>
         <Container maxWidth="lg" className={classes.container}>
           <Grid container spacing={3}>
             {/* Chart */}

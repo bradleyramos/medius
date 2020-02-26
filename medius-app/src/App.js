@@ -8,6 +8,7 @@ import Login from './components/Login';
 import Home from './components/Home';
 import SelectPage from './components/SelectPage';
 import Hire from './components/Hire';
+import Inbox from './components/Inbox';
 import Navigation from './components/Navigation';
 import NewProject from './components/NewProject';
 
@@ -23,6 +24,7 @@ class App extends Component {
              <Route path="/newproject" component={NewProject}/>
              <Route path="/select" component={SelectPage}/>
              <Route path="/hire" component={Hire}/>
+             <Route path="/inbox" component={Inbox}/>
             <Route component={Error}/>
            </Switch>
         </div> 

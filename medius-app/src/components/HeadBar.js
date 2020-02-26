@@ -83,6 +83,7 @@ const HeadBar = () => {
             <NavLink to="/home">Home</NavLink>
             <NavLink to="/newproject">Newproject</NavLink>
             <NavLink to="/select">Select</NavLink>
+            <NavLink to="/Inbox">Inbox</NavLink>
           </Toolbar>
         </AppBar>
       </div>
